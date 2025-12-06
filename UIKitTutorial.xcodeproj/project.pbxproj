@@ -6,27 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		440428C42EE3A18C00AFF155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440428C32EE3A18C00AFF155 /* AppDelegate.swift */; };
+		440428C62EE3A18C00AFF155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440428C52EE3A18C00AFF155 /* SceneDelegate.swift */; };
+		440428CB2EE3A18C00AFF155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440428C92EE3A18C00AFF155 /* Main.storyboard */; };
+		440428CD2EE3A18D00AFF155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440428CC2EE3A18D00AFF155 /* Assets.xcassets */; };
+		440428D02EE3A18D00AFF155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440428CE2EE3A18D00AFF155 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		440428C02EE3A18C00AFF155 /* UIKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		440428C32EE3A18C00AFF155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		440428C52EE3A18C00AFF155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		440428CA2EE3A18C00AFF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		440428CC2EE3A18D00AFF155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		440428CF2EE3A18D00AFF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		440428D12EE3A18D00AFF155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		440428D22EE3A18D00AFF155 /* Exceptions for "UIKitTutorial" folder in "UIKitTutorial" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 440428BF2EE3A18C00AFF155 /* UIKitTutorial */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		440428C22EE3A18C00AFF155 /* UIKitTutorial */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				440428D22EE3A18D00AFF155 /* Exceptions for "UIKitTutorial" folder in "UIKitTutorial" target */,
-			);
 			path = UIKitTutorial;
+			sourceTree = "<group>";
+		};
+		440429032EE3EAAB00AFF155 /* Basics */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Basics;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,8 +51,13 @@
 		440428B72EE3A18C00AFF155 = {
 			isa = PBXGroup;
 			children = (
-				440428C22EE3A18C00AFF155 /* UIKitTutorial */,
+				440428DA2EE3A1A400AFF155 /* App */,
+				440429032EE3EAAB00AFF155 /* Basics */,
+				440428DC2EE3A1B000AFF155 /* Crypto */,
 				440428C12EE3A18C00AFF155 /* Products */,
+				440428DD2EE3A1B900AFF155 /* Resources */,
+				440428D82EE3A19400AFF155 /* Storyboards */,
+				440428C22EE3A18C00AFF155 /* UIKitTutorial */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,40 @@
 				440428C02EE3A18C00AFF155 /* UIKitTutorial.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		440428D82EE3A19400AFF155 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				440428CE2EE3A18D00AFF155 /* LaunchScreen.storyboard */,
+				440428C92EE3A18C00AFF155 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		440428DA2EE3A1A400AFF155 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				440428C52EE3A18C00AFF155 /* SceneDelegate.swift */,
+				440428C32EE3A18C00AFF155 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		440428DC2EE3A1B000AFF155 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		440428DD2EE3A1B900AFF155 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				440428CC2EE3A18D00AFF155 /* Assets.xcassets */,
+				440428D12EE3A18D00AFF155 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +120,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				440428C22EE3A18C00AFF155 /* UIKitTutorial */,
+				440429032EE3EAAB00AFF155 /* Basics */,
 			);
 			name = UIKitTutorial;
 			packageProductDependencies = (
@@ -122,6 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440428D02EE3A18D00AFF155 /* LaunchScreen.storyboard in Resources */,
+				440428CD2EE3A18D00AFF155 /* Assets.xcassets in Resources */,
+				440428CB2EE3A18C00AFF155 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +181,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440428C42EE3A18C00AFF155 /* AppDelegate.swift in Sources */,
+				440428C62EE3A18C00AFF155 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		440428C92EE3A18C00AFF155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440428CA2EE3A18C00AFF155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		440428CE2EE3A18D00AFF155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440428CF2EE3A18D00AFF155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		440428D42EE3A18D00AFF155 /* Debug */ = {
@@ -147,7 +217,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5GXS6AYDN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UIKitTutorial/Info.plist;
+				INFOPLIST_FILE = Resources/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -175,7 +245,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5GXS6AYDN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UIKitTutorial/Info.plist;
+				INFOPLIST_FILE = Resources/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
